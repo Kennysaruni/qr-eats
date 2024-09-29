@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    margin: 0; /* Remove default margin */
+    flex-direction: column; /* Stack children vertically */
+}
+
+.nav-container {
+    width: 100%;
+    height: 70px; /* Example height for the navbar */
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 960px;
+    height: auto; /* Change to auto for flexibility */
+    padding: 20px; /* Optional: Add some padding for content */
+    margin-top: 70px; /* Adjust this to match the navbar height */
+}
+
+.img-title-container {
+    display: flex; /* Enables flexbox for side-by-side layout */
+    gap: 20px; /* Adds space between the image and the title */
+    color: black;
+}
+
+.hero-image {
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* Stacks the title and paragraph vertically */
+    padding-top: 20px;
+}
+
+.title {
+    color: rgb(0, 0, 0); /* Example color for the title, adjust as needed */
+    margin: 0; /* Removes default margin */
+}
+
+.description {
+    color: rgb(0, 0, 0); /* Example color for the paragraph, adjust as needed */
+    margin-top: 5px; /* Space between title and paragraph */
+}
+
+.text-container input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F5F0E5;
+    width: 400px;
+    height: 64px;
+    border-radius: 12px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.text-container input:focus {
+    border: none;
+}
+
+.text-container input::placeholder {
+    color: #A1824A; /* Change this to your desired color */
+    opacity: 1; /* Optional: ensures the color is fully applied */
+}
+
+.images {
+    display: flex;
+    flex-direction: column; /* Stack the rows of images */
+    gap: 20px; /* Space between the rows */
+    margin-top: 20px;
+}
+
+.restaurant-row {
+    display: flex; /* Each row contains images in a row */
+    justify-content: space-between; /* Evenly space items */
+}
+
+.restaurant-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    align-items: center;
+    width: 30%; /* Ensures 3 items fit within a row */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.restaurant-card:hover {
+    transform: translateY(-10px); /* Slight upward movement */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect on hover */
+}
+
+.restaurant-image {
+    width: 100%; /* Full width of the card */
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    object-fit: cover; /* Ensures images cover the card */
+}
+
+p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #000;
+}

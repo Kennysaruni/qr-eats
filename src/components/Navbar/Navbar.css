@@ -1,0 +1,143 @@
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; 
+}
+
+.logo {
+    margin: 15px 20px 15px 20px;
+    padding-left: 25px;
+    font-size: 22px;
+    font-weight: 900;
+    color: black;
+} 
+
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 290px;
+    margin: 0px auto;
+    color: #121417;
+    font-size: 0.9em;
+    padding-top: 25px;
+
+}
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-container {
+  width: 100%;
+  height: 70px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between; /* Aligns logo and nav items to the start */
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #E5E8EB;
+}
+
+.logo {
+    margin-right: 20px; /* Creates space between the logo and nav items */
+    padding-left: 25px;
+    font-size: 22px;
+    font-weight: 900;
+    color: black;
+} 
+
+.nav-items {
+    display: flex;
+    align-items: center; /* Vertically aligns the nav items */
+    gap: 20px; /* Space between individual nav items */
+    color: #121417;
+    font-size: 0.9em;
+    color: black;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: #000000;
+}
+.nav-left {
+    display: flex;
+    align-items: center; /* Vertically aligns logo and nav-items */
+  }
+
+.last-items {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between search input and cart button */
+}
+
+.last-items input[type="text"] {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #F5F0E5;
+    width: 160px;
+    height: 40px;
+    border-radius: 12px;
+    outline: none;
+}
+
+.last-items input:focus{
+    border: none;
+}
+
+.last-items input::placeholder {
+    color: #A1824A; /* Change this to your desired color */
+    opacity: 1; /* Optional: ensures the color is fully applied */
+}
+
+
+.cart {
+    padding: 5px 15px;
+    background-color: #009963;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 84px;
+    height: 40px;
+}

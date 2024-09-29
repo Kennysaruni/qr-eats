@@ -1,0 +1,59 @@
+.images-foods{
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-radius: 12px;
+    padding-bottom: 40px;
+
+}
+.image{
+    width: 301px;
+    height: 169px;
+    border-radius: 12px;
+    padding-top: 5px;
+}
+h3{
+    padding-top: 20px;
+}
+
+.price{
+    color: #A1824A;
+    font-size: 13px;
+}
+.beverages{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.qr-code {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.qr-code img {
+    width: 300px; /* Adjust the width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 12px; /* Optional: rounded corners */
+    padding-top: 40px;
+}
+
+.qr-code .scan {
+    position: absolute;
+    top: -30px; /* Adjust this value to position the text above the QR code */
+    background-color: #009963; /* Background for the text */
+    width: 480px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    border-radius: 20px; /* Rounded corners */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    padding: 0; /* Remove unnecessary padding */
+}
