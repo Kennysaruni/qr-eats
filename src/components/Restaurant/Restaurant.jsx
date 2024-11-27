@@ -10,7 +10,7 @@ function Restaurant() {
   const [error, setError] = useState(null); // Track errors
 
   useEffect(() => {
-    fetch(`https://qr-eats-iota.vercel.app//${id}`) // Use the dynamic ID in the fetch URL
+    fetch(`https://qr-eats-iota.vercel.app/restaurants/${id}`) // Use the dynamic ID in the fetch URL
       .then((response) => {
         if (!response.ok) {
           throw new Error(`Error: ${response.statusText}`); // Throw an error if status is not OK
