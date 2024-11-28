@@ -20,7 +20,6 @@ function Navbar() {
       </div>
 
       <div className="last-items">
-        <input type="text" placeholder="Search" />
         <button className="cart">Cart</button>
       </div>
     </div>

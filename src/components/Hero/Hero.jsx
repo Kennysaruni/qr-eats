@@ -2,18 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import "./Hero.css";
 import image from "../../assets/hero.png";
-import { data } from "../../data/data.js";
+import data  from "../../../db.json";
 
 function Hero() {
-  const [restaurants, setRestaurants] = useState([]);
 
-  useEffect(() => {
-    fetch("https://qr-eats-iota.vercel.app/restaurants")
-      .then((res) => res.json())
-      .then((data) => setRestaurants(data));
-  }, []);
-
-  // const restaurants = data.restaurants
+  const restaurants = data.restaurants
 
   // Group restaurants into rows of 3
   const groupedRestaurants = [];
